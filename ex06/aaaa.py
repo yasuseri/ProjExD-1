@@ -261,7 +261,7 @@ class Breakout:
         '''ゲーム開始'''
         self.sound(0)    #ゲームが始まったらbgmを流す
         
-        if len(self.blocks) == 0 or len(self.balls) == 0:
+        if len(self.blocks)  or len(self.balls):
             # ゲームクリア or ゲームオーバー時は最初からやり直し
 
             # キャンバスの図形を全て削除
